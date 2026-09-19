@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Deanna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to custom CSS -->
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+    <!-- Landing / Intro Section -->
+    <section id="intro-section" class="active">
+        <div class="lily-container" id="lily-flower-container">
+            <svg viewBox="0 0 200 200" id="lily-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="petal-grad" cx="50%" cy="100%" r="100%">
+                        <stop offset="0%" stop-color="#fdfcf0" />
+                        <stop offset="60%" stop-color="#ffffff" />
+                        <stop offset="100%" stop-color="#f5e6e6" />
+                    </radialGradient>
+                    <radialGradient id="petal-grad-dark" cx="50%" cy="100%" r="100%">
+                        <stop offset="0%" stop-color="#e8e8e0" />
+                        <stop offset="60%" stop-color="#fdfcf0" />
+                        <stop offset="100%" stop-color="#e6d5d5" />
+                    </radialGradient>
+                    <linearGradient id="stripe-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+                        <stop offset="0%" stop-color="#8a1135" />
+                        <stop offset="50%" stop-color="#cc3163" />
+                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+                    </linearGradient>
+
+                    <g id="petal-out">
+                        <path d="M100 120 C70 80, 80 20, 100 5 C120 20, 130 80, 100 120 Z" fill="url(#petal-grad-dark)" />
+                        <path d="M100 120 C85 95, 92 40, 100 15 C108 40, 115 95, 100 120 Z" fill="url(#stripe-grad)" />
+                        <circle cx="100" cy="90" r="1.5" fill="#4a081b" />
+                        <circle cx="95" cy="80" r="1.2" fill="#4a081b" />
+                        <circle cx="105" cy="85" r="1" fill="#4a081b" />
+                        <circle cx="92" cy="100" r="1.5" fill="#4a081b" />
+                        <circle cx="108" cy="100" r="1.5" fill="#4a081b" />
+                        <circle cx="97" cy="65" r="1" fill="#4a081b" />
+                        <circle cx="103" cy="70" r="1.2" fill="#4a081b" />
+                    </g>
+                    <g id="petal-in">
+                        <path d="M100 120 C75 85, 85 30, 100 10 C115 30, 125 85, 100 120 Z" fill="url(#petal-grad)" />
+                        <path d="M100 120 C87 95, 93 45, 100 20 C107 45, 113 95, 100 120 Z" fill="url(#stripe-grad)" />
+                        <circle cx="100" cy="90" r="1.5" fill="#4a081b" />
+                        <circle cx="95" cy="80" r="1.2" fill="#4a081b" />
+                        <circle cx="105" cy="85" r="1" fill="#4a081b" />
+                        <circle cx="92" cy="100" r="1.5" fill="#4a081b" />
+                        <circle cx="108" cy="100" r="1.5" fill="#4a081b" />
+                        <circle cx="97" cy="65" r="1" fill="#4a081b" />
+                        <circle cx="103" cy="70" r="1.2" fill="#4a081b" />
+                    </g>
+                    <g id="stamen">
+                        <path d="M100 120 Q 100 80 100 45" stroke="#90b874" stroke-width="1.5" fill="none"/>
+                        <circle cx="100" cy="45" r="3" fill="#361510" />
+                    </g>
+                </defs>
+                
+                <!-- Stem -->
+                <path d="M100 120 Q 90 160 95 200" stroke="#4a6353" stroke-width="4" fill="none"/>
+                
+                <!-- Leaves -->
+                <path d="M98 160 Q 60 150 40 120 Q 70 140 95 170 Z" fill="#4a6353"/>
+                <path d="M97 180 Q 140 170 160 140 Q 130 160 96 190 Z" fill="#4a6353"/>
+
+                <!-- Petal template with speckles -->
+                <defs>
+                    <g id="petal-out">
+                        <path d="M100 120 C70 80, 80 20, 100 5 C120 20, 130 80, 100 120 Z" fill="url(#petal-grad-dark)" />
+                        <circle cx="100" cy="90" r="1.5" fill="#d4af37" />
+                        <circle cx="95" cy="80" r="1.2" fill="#d4af37" />
+                        <circle cx="105" cy="85" r="1" fill="#d4af37" />
+                        <circle cx="92" cy="100" r="1.5" fill="#d4af37" />
+                        <circle cx="108" cy="100" r="1.5" fill="#d4af37" />
+                    </g>
+                    <g id="petal-in">
+                        <path d="M100 120 C75 85, 85 30, 100 10 C115 30, 125 85, 100 120 Z" fill="url(#petal-grad)" />
+                        <circle cx="100" cy="90" r="1.5" fill="#d4af37" />
+                        <circle cx="95" cy="80" r="1.2" fill="#d4af37" />
+                        <circle cx="105" cy="85" r="1" fill="#d4af37" />
+                        <circle cx="92" cy="100" r="1.5" fill="#d4af37" />
+                        <circle cx="108" cy="100" r="1.5" fill="#d4af37" />
+                    </g>
+                    <g id="stamen">
+                        <path d="M100 120 Q 100 80 100 45" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+                        <circle cx="100" cy="45" r="3" fill="#b8962a" />
+                    </g>
+                </defs>
+
+                <!-- Outer Petals -->
+                <use href="#petal-out" class="petal petal-out-1" />
+                <use href="#petal-out" class="petal petal-out-2" />
+                <use href="#petal-out" class="petal petal-out-3" />
+
+                <!-- Inner Petals -->
+                <use href="#petal-in" class="petal petal-in-1" />
+                <use href="#petal-in" class="petal petal-in-2" />
+                <use href="#petal-in" class="petal petal-in-3" />
+
+                <!-- Stamens -->
+                <g class="stamens">
+                    <use href="#stamen" class="stamen stamen-1" />
+                    <use href="#stamen" class="stamen stamen-2" />
+                    <use href="#stamen" class="stamen stamen-3" />
+                    <use href="#stamen" class="stamen stamen-4" />
+                    <use href="#stamen" class="stamen stamen-5" />
+                    <use href="#stamen" class="stamen stamen-6" />
+                </g>
+                
+                <circle cx="100" cy="120" r="4" fill="#a4b595"/>
+            </svg>
+            <div class="lily-glow"></div>
+        </div>
+    </section>
+
+    <!-- Main Experience Section -->
+    <section id="main-section" class="hidden">
+        <div class="container">
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-wrapper">
+                <p class="countdown-subtitle" id="countdown-subtitle">until I get to see you again</p>
+                <div id="countdown-display" class="countdown-display">
+                    <div class="time-block"><span id="days">00</span><span class="label">DAYS</span></div>
+                    <div class="separator">:</div>
+                    <div class="time-block"><span id="hours">00</span><span class="label">HOURS</span></div>
+                    <div class="separator">:</div>
+                    <div class="time-block"><span id="minutes">00</span><span class="label">MIN</span></div>
+                    <div class="separator">:</div>
+                    <div class="time-block"><span id="seconds">00</span><span class="label">SEC</span></div>
+                </div>
+                <div id="countdown-finished" class="hidden">
+                    <p class="volume-warning" style="font-size: 0.85rem; color: var(--accent-green); margin-bottom: 15px; letter-spacing: 1px;">(put your volume on 🔊)</p>
+                    <button id="press-me-btn" class="press-me-btn">PRESS ME</button>
+                </div>
+            </div>
+
+            <!-- Mini DJ Console: DEANNA FM -->
+            <div class="dj-console">
+                <h2 class="console-title">DEANNA FM</h2>
+                
+                <div class="decks-container">
+                    <!-- Deck A -->
+                    <div class="deck" id="deck-a-container">
+                        <div class="deck-top">
+                            <div class="track-header" style="display: flex; align-items: center; gap: 10px;">
+                                <div class="track-info" id="track-title-a" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;">KAYTRANADA - You're The One</div>
+                                <button class="change-track-btn" id="change-track-a" title="Choose track" style="width: auto; padding: 5px 12px; border-radius: 15px; font-weight: bold; flex-shrink: 0;">💿 CHANGE</button>
+                            </div>
+                            <div class="bpm-control">
+                                <button class="bpm-btn" id="bpm-a-down">-</button>
+                                <span class="bpm-display" id="bpm-a-val">112 BPM</span>
+                                <button class="bpm-btn" id="bpm-a-up">+</button>
+                                <button class="bpm-btn sync-btn" id="sync-a" style="width: auto; padding: 0 5px; margin-left: 5px;">SYNC</button>
+                            </div>
+                        </div>
+                        <div class="waveform-container" id="waveform-a">
+                            <div class="waveform-progress" id="progress-a"></div>
+                        </div>
+                        <div class="deck-controls-row">
+                            <div class="xy-pad-container">
+                                <div class="xy-pad" id="xy-pad-a">
+                                    <div class="xy-crosshair" id="xy-crosshair-a"></div>
+                                </div>
+                                <div class="pad-label">FX 1 SLICER</div>
+                            </div>
+                            <div class="record-section">
+                                <div class="record-wrapper" id="record-wrapper-a">
+                                    <div class="record" id="record-a"><div class="record-center"></div></div>
+                                </div>
+                                <div class="stems-container" id="stems-container-a" style="display: none;">
+                                    <button class="stem-btn active" id="stem-a-vocal">🎙️ VOCAL</button>
+                                    <button class="stem-btn active" id="stem-a-inst">🎹 MUSIC</button>
+                                </div>
+                                <button class="play-btn" id="play-a">▶ PLAY</button>
+                            </div>
+                            <div class="eq-section">
+                                <div class="slider-group">
+                                    <input type="range" min="-12" max="12" value="0" class="vertical-slider" id="eq-a-mid">
+                                    <label>MID</label>
+                                </div>
+                                <div class="slider-group">
+                                    <input type="range" min="-12" max="12" value="0" class="vertical-slider" id="eq-a-bass">
+                                    <label>BASS</label>
+                                </div>
+                                <div class="slider-group">
+                                    <input type="range" min="-50" max="50" value="0" class="vertical-slider filter-slider" id="eq-a-filter">
+                                    <label>FILTER</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Crossfader & Auto Transition -->
+                    <div class="mixer-center">
+                        <div class="crossfader-container">
+                            <span class="fader-label">A</span>
+                            <input type="range" min="0" max="100" value="50" class="crossfader" id="crossfader">
+                            <span class="fader-label">B</span>
+                        </div>
+                        <button id="auto-transition" class="auto-btn">AUTO TRANSITION</button>
+                    </div>
+
+                    <!-- Deck B -->
+                    <div class="deck" id="deck-b-container">
+                        <div class="deck-top">
+                            <div class="track-header" style="display: flex; align-items: center; gap: 10px;">
+                                <div class="track-info" id="track-title-b" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;">Frank Ocean - Lost</div>
+                                <button class="change-track-btn" id="change-track-b" title="Choose track" style="width: auto; padding: 5px 12px; border-radius: 15px; font-weight: bold; flex-shrink: 0;">💿 CHANGE</button>
+                            </div>
+                            <div class="bpm-control">
+                                <button class="bpm-btn" id="bpm-b-down">-</button>
+                                <span class="bpm-display" id="bpm-b-val">123 BPM</span>
+                                <button class="bpm-btn" id="bpm-b-up">+</button>
+                                <button class="bpm-btn sync-btn" id="sync-b" style="width: auto; padding: 0 5px; margin-left: 5px;">SYNC</button>
+                            </div>
+                        </div>
+                        <div class="waveform-container" id="waveform-b">
+                            <div class="waveform-progress" id="progress-b"></div>
+                        </div>
+                        <div class="deck-controls-row">
+                            <div class="eq-section">
+                                <div class="slider-group">
+                                    <input type="range" min="-12" max="12" value="0" class="vertical-slider" id="eq-b-mid">
+                                    <label>MID</label>
+                                </div>
+                                <div class="slider-group">
+                                    <input type="range" min="-12" max="12" value="0" class="vertical-slider" id="eq-b-bass">
+                                    <label>BASS</label>
+                                </div>
+                                <div class="slider-group">
+                                    <input type="range" min="-50" max="50" value="0" class="vertical-slider filter-slider" id="eq-b-filter">
+                                    <label>FILTER</label>
+                                </div>
+                            </div>
+                            <div class="record-section">
+                                <div class="record-wrapper" id="record-wrapper-b">
+                                    <div class="record" id="record-b"><div class="record-center"></div></div>
+                                </div>
+                                <div class="stems-container" id="stems-container-b" style="display: none;">
+                                    <button class="stem-btn active" id="stem-b-vocal">🎙️ VOCAL</button>
+                                    <button class="stem-btn active" id="stem-b-inst">🎹 MUSIC</button>
+                                </div>
+                                <button class="play-btn" id="play-b">▶ PLAY</button>
+                            </div>
+                            <div class="xy-pad-container">
+                                <div class="xy-pad" id="xy-pad-b">
+                                    <div class="xy-crosshair" id="xy-crosshair-b"></div>
+                                </div>
+                                <div class="pad-label">FX 1 SLICER</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DJ Effects (Global) -->
+                <div class="effects-container" style="margin-top: 30px;">
+                    <button class="effect-btn" id="fx-airhorn">
+                        <span class="icon">📢</span> AIRHORN
+                    </button>
+                    <button class="effect-btn" id="fx-deanna">
+                        <span class="icon">📻</span> DEANNA FM
+                    </button>
+                    <button class="effect-btn" id="fx-echo">
+                        <span class="icon">〰️</span> ECHO
+                    </button>
+                    <button class="effect-btn" id="fx-siren">
+                        <span class="icon">🚨</span> SIREN
+                    </button>
+                    <button class="effect-btn" id="fx-laser">
+                        <span class="icon">🔫</span> LASER
+                    </button>
+                    <button class="effect-btn" id="fx-rewind">
+                        <span class="icon">⏪</span> REWIND
+                    </button>
+                    <button class="effect-btn" id="fx-explosion">
+                        <span class="icon">💥</span> DROP
+                    </button>
+                </div>
+            </div>
+            
+            <p style="text-align: center; color: var(--text-dim); font-size: 0.8rem; margin-top: 20px; opacity: 0.5;">
+                
+            </p>
+        </div>
+        
+        <!-- Overlay for drop effect -->
+        <div id="drop-overlay">
+            <div id="drop-counter">3</div>
+        </div>
+
+        <!-- Track Selector Overlay (Apple Style) -->
+        <div id="track-selector-overlay" class="hidden">
+            <button id="close-selector" class="close-btn">×</button>
+            <h3 class="selector-title">CHOOSE A TRACK</h3>
+            <div class="cover-flow-container" id="cover-flow">
+                <!-- Records injected by JS -->
+            </div>
+            
+            <h4 style="font-family: 'Montserrat', sans-serif; color: var(--accent-green); margin-top: 20px; letter-spacing: 2px;">THONY SPECIALS</h4>
+            <div class="cover-flow-container" id="thony-specials" style="margin-top: 0; padding-top: 20px; max-height: 350px;">
+                <!-- Specials injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Hidden audio elements -->
+    <audio id="audio-a-vocal" src="audio/user-track-1.mp3" preload="auto" loop data-bpm="112"></audio>
+    <audio id="audio-a-inst" preload="auto" loop data-bpm="112"></audio>
+    <audio id="audio-b-vocal" src="audio/user-track-3.mp3" preload="auto" loop data-bpm="123"></audio>
+    <audio id="audio-b-inst" preload="auto" loop data-bpm="123"></audio>
+    <audio id="audio-airhorn" src="audio/airhorn.mp3" preload="auto"></audio>
+    <audio id="audio-deanna-intro" src="audio/deanna-intro.mp3" preload="auto"></audio>
+    <audio id="audio-deanna-fm" src="audio/deanna-fm.mp3" preload="auto"></audio>
+    <audio id="audio-siren" src="audio/siren.wav" preload="auto"></audio>
+    <audio id="audio-laser" src="audio/laser.wav" preload="auto"></audio>
+    <audio id="audio-rewind" src="audio/rewind.wav" preload="auto"></audio>
+    <audio id="audio-explosion" src="audio/explosion.wav" preload="auto"></audio>
+
+    <script src="script.js?v=5"></script>
+</body>
+</html>
